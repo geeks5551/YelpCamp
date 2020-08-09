@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>YelpCamp</title>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <!-- Font Awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+        
+        <!-- Modernizer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+        
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="/stylesheets/home.css">
+	</head>
+	<body>
+        <div class="container">
+            <% if(error && error.length > 0){ %>
+                <div class="alert alert-danger" role="alert">
+                    <em><%= error %></em>
+                </div>
+            <% } %>
+            <% if(success && success.length > 0){ %>
+                <div class="alert alert-success" role="alert">
+                    <em><%= success %></em>
+                </div>
+            <% } %>
+        </div>
+
+        <div id="landing-header">
+            <i id="main-icon" class="fas fa-campground"></i>
+            <h1 class="mb-4">Welcome to YelpCamp!</h1>
+            <a href="/campgrounds" class="btn btn-lg btn-primary">View All Campgrounds</a>
+        </div>
+
+        <ul class="slideshow">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <footer>
+            <div>
+                <strong>Made by <em>Shivam</em></strong>
+            </div>
+            <div>
+                <span><a href="https://www.facebook.com/profile.php?id=100040431517259"><i class="fab fa-facebook link-icon"></i></a></span>
+                <span><a href="https://www.instagram.com/_shivam.005/"><i class="fab fa-instagram link-icon"></i></a></span>
+                <span><a href="https://www.instagram.com/_shivamwrites005/"><i class="fab fa-instagram link-icon"></i></a></span>
+                <span><a href="https://www.linkedin.com/in/priyansh-singh-29209b192/"><i class="fab fa-linkedin link-icon"></i></a></span>
+                <span><a href="mailto:shivamagrahari5999@gmail.com"><i class="far fa-envelope link-icon"></i></a></span>
+                <span><a href="https://github.com/geeks5551"><i class="fab fa-github link-icon"></i></a></span>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+.btn.btn-warning{
+    color: white;
+}
+#link{
+    text-decoration: none;
+}
+
+.list-group-item{
+    color: black;
+}
+.list-group-item:hover{
+    color: white;
+}
